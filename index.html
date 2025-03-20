@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOC - Página de Inicio</title>
+    <link rel="stylesheet" href="css/estiloinicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Monitoreo de sistemas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="login.html">Administrador</a></li>
+                <li><button id="open-login-modal">Iniciar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-contenido">
+            <h2>Bienvenido al Centro de Operaciones de Red</h2>
+            <p>Monitorea y protege tu red con nuestras poderosas herramientas y servicios.</p>
+            <a href="#" class="btn-destacado">Conoce más</a>
+        </div>
+    </div>
+
+
+    <!-- Formulario de contacto -->
+    <div class="formulario-contacto">
+        <h2>Contáctanos</h2>
+        <form action="#" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+    <footer>
+        <p>Derechos de Autor © 2024 Tu Compañía</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form action="/php/admin.php" method="POST">
+                <input type="text" name="usuario" placeholder="Usuario" required>
+                <input type="password" name="contrasena" placeholder="Contraseña" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

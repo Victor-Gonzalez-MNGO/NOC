@@ -1,0 +1,113 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0B0C10; /* Color primario */
+    color: #C5C6C7; /* Color secundario */
+}
+
+header {
+    background-color: #123d46; /* Nuevo color de fondo */
+    color: #ffffff; /* Color de texto */
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: -20px; /* Eliminar espacio entre header y nav */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Color de texto */
+    text-decoration: none;
+}
+
+.contenedor-secciones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten automáticamente */
+}
+
+section {
+    padding: 20px;
+    width: calc(50% - 40px); /* Ancho reducido de los sections */
+    background-color: #66FCF1; /* Color de acento */
+    color: #0B0C10; /* Color primario */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+    background-color: #123d46; /* Nuevo color de fondo */
+    color: #ffffff; /* Color de texto */
+    padding: 20px;
+    margin-top: 40px; /* Espacio entre las secciones y el formulario */
+    border-radius: 10px;
+    max-width: 500px; /* Anchura máxima del formulario */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario-contacto h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: calc(100% - 20px); /* Anchura del 100% menos el relleno */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff; /* Color de fondo del input */
+    color: #0B0C10; /* Color del texto del input */
+}
+
+.formulario-contacto button {
+    width: 100%; /* Ancho completo */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #66FCF1; /* Color de acento */
+    color: #0B0C10; /* Color primario */
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #C5C6C7; /* Color secundario */
+    color: #0B0C10; /* Color primario */
+}
+
+footer {
+    background-color: #0B0C10; /* Color primario */
+    color: #C5C6C7; /* Color secundario */
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.titulo {
+    text-align: center;
+    margin-top: 20px; /* Espacio entre el título y las secciones */
+}
+
+.titulo h2 {
+    font-size: 52px; /* Tamaño de fuente del título aumentado */
+    color: #66FCF1; /* Color de acento */
+    text-transform: uppercase; /* Convertir texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}

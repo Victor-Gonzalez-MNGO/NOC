@@ -1,0 +1,159 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0B0C10; /* Color primario */
+    color: #C5C6C7; /* Color secundario */
+}
+
+header {
+    background-color: #123d46; /* Nuevo color de fondo */
+    color: #ffffff; /* Color de texto */
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: -20px; /* Eliminar espacio entre header y nav */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Color de texto */
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('imagen-de-fondo.jpg'); /* Ruta a la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Altura del héroe */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-contenido {
+    max-width: 600px; /* Ancho máximo del contenido del héroe */
+}
+
+.hero-contenido h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-contenido p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-destacado {
+    padding: 10px 20px;
+    background-color: #66FCF1; /* Color de acento */
+    color: #0B0C10; /* Color primario */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-destacado:hover {
+    background-color: #C5C6C7; /* Color secundario */
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+    background-color: #123d46; /* Nuevo color de fondo */
+    color: #ffffff; /* Color de texto */
+    padding: 20px;
+    margin-top: 40px; /* Espacio entre las secciones y el formulario */
+    border-radius: 10px;
+    max-width: 500px; /* Anchura máxima del formulario */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario-contacto h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: calc(100% - 20px); /* Anchura del 100% menos el relleno */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff; /* Color de fondo del input */
+    color: #0B0C10; /* Color del texto del input */
+}
+
+.formulario-contacto button {
+    width: 100%; /* Ancho completo */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #66FCF1; /* Color de acento */
+    color: #0B0C10; /* Color primario */
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #C5C6C7; /* Color secundario */
+    color: #0B0C10; /* Color primario */
+}
+
+footer {
+    background-color: #0B0C10; /* Color primario */
+    color: #C5C6C7; /* Color secundario */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Ocultar modal por defecto */
+    position: fixed; /* Fijar posición */
+    z-index: 1; /* Por encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Margen superior e inferior, centrado horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
